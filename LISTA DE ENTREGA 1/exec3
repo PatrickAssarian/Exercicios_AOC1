@@ -1,0 +1,20 @@
+addi $t5, $zero, 2   #x = 2 
+
+#CAlCULO 5X
+
+add $t7, $t5, $t5    #t7 = 2x
+add $t7, $t7, $t7    #t7 = 4x
+add $t7, $t7, $t5    #t7 = 5x
+
+#CALCULO 3X²
+
+mult $t5, $t5        #x²
+mflo $t8	     #t8 = x²
+
+add $t9, $t8, $t8    #t9 = 2x²
+add $t9, $t9, $t8    #t9 = 3x²
+
+#CALCULO FINAL Y
+
+sub $t6, $t9, $t7    #y = 3x² - 5x
+addi $t6, $t6, 13     #y = 3x² - 5x + 13

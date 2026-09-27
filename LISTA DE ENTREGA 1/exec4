@@ -1,0 +1,6 @@
+addi $t1, $zero, 1   #x = 1
+
+add $t2, $t1, $t1    #x = 2x
+add $t2, $t2, $t2    #x = 4x
+add $t2, $t2, $t2    #x = 8x
+add $t2, $zero, $t2  
